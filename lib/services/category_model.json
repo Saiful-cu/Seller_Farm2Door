@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Fruits",
+      "subcategory": [
+        "Mango",
+        "Lishi",
+        "Jack-fruit"
+      ]
+    },
+    {
+      "name": "Fish",
+      "subcategory": [
+        "Elisha",
+        "Katla"
+      ]
+    },
+    {
+      "name": "Sweets",
+      "subcategory": [
+        "Roso-golla",
+        "Son-des",
+        "Cake",
+        "Ros-malai"
+      ]
+    },
+    {
+      "name": "Fruits",
+      "subcategory": [
+        "Mango",
+        "Lishi",
+        "Jack-fruit"
+      ]
+    }
+  ]
+}
