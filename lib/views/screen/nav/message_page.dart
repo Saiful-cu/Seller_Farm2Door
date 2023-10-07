@@ -15,8 +15,10 @@ class _MessagePageState extends State<MessagePage> {
       appBar: AppBar(
         elevation: 0.0,
         leading: IconButton(
-          color: Colors.black,
-          onPressed: () {},
+          color: textPrimary,
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: Icon(Icons.arrow_back),
         ),
         centerTitle: true,
@@ -30,7 +32,7 @@ class _MessagePageState extends State<MessagePage> {
         children: [
           // Section Selection Buttons
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               buildSectionButton(
                   label: "Seller Messages", index: 0, icon: Icons.message),
@@ -77,6 +79,7 @@ class _MessagePageState extends State<MessagePage> {
         });
       },
       style: ElevatedButton.styleFrom(
+        fixedSize: Size(context.screenWidth / 2.0, 24),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(0.0),
         ),

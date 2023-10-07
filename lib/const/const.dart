@@ -6,3 +6,4 @@ export './lists.dart';
 export './strings.dart';
 export 'package:flutter/services.dart';
 export 'package:velocity_x/velocity_x.dart';
+export 'package:velocity_x/src/extensions/context_ext.dart';

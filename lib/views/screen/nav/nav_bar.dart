@@ -32,7 +32,12 @@ class _NavBarScreenState extends State<NavBarScreen> {
       title: 'Store',
     ),
   ];
-  List<Widget> pages = [HomePage(), ProductPage(), MessagePage(), StorePage()];
+  List<Widget> pages = [
+    HomePage(),
+    ProductPage(),
+    MessagePage(),
+    StoreSettingsPage()
+  ];
   int currentIndex = 0;
 
   @override

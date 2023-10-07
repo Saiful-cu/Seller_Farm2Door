@@ -154,7 +154,7 @@ class SalesDataSection extends StatelessWidget {
                 children: [
                   CustomCard(
                     title: 'Revenue',
-                    value: '\$5,000',
+                    value: '৳5,000',
                     icon: Icons.monetization_on, // Add icon here
                   ),
                   CustomCard(
@@ -175,7 +175,7 @@ class SalesDataSection extends StatelessWidget {
                   ),
                   CustomCard(
                     title: 'Average Sold',
-                    value: '\$50',
+                    value: '৳50',
                     icon: Icons.attach_money, // Add icon here
                   ),
                 ],
@@ -287,26 +287,25 @@ class CustomCard extends StatelessWidget {
             SizedBox(height: 8.0),
             Center(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 8.0),
+                Row(
                   children: [
+                    Icon(Icons.arrow_drop_up, color: primary),
                     Text(
-                      title,
-                      style: TextStyle(
-                          fontSize: 14.0, fontWeight: FontWeight.bold),
+                      value,
+                      style: TextStyle(fontSize: 14.0),
                     ),
-                    SizedBox(height: 8.0),
-                    Row(
-                      children: [
-                        Icon(Icons.arrow_drop_up, color: primary),
-                        Text(
-                          value,
-                          style: TextStyle(fontSize: 14.0),
-                        ),
-                      ],
-                    )
                   ],
-                ))
+                )
+              ],
+            ))
           ],
         ),
       ),
